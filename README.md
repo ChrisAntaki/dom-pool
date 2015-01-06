@@ -28,3 +28,9 @@ var circlePool = new Pool({
 // Enjoy!
 
 ```
+
+### NPM
+
+```js
+npm install dom-pool
+```

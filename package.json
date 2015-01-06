@@ -1,0 +1,23 @@
+{
+  "name": "dom-pool",
+  "version": "0.1.0",
+  "description": "Make your browser's life easier",
+  "main": "Pool.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ChrisAntaki/dom-pool.git"
+  },
+  "keywords": [
+    "dom",
+    "pool"
+  ],
+  "author": "Chris Antaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisAntaki/dom-pool/issues"
+  },
+  "homepage": "https://github.com/ChrisAntaki/dom-pool"
+}

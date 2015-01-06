@@ -29,7 +29,7 @@ var circlePool = new Pool({
 
 ```
 
-### NPM
+### Install with NPM
 
 ```js
 npm install dom-pool

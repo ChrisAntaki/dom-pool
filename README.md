@@ -20,7 +20,7 @@ divPool.push(div);
 divPool.allocate(100);
 
 // Get your SVG on
-new Pool({
+var circlePool = new Pool({
   namespace: 'http://www.w3.org/2000/svg',
   tagName: 'circle',
 });

@@ -1,7 +1,7 @@
 function Pool(params) {
     this.storage = [];
-    this.tagName = params.tagName;
-    this.namespace = params.namespace;
+    this.tagName = params.tagName || '';
+    this.namespace = params.namespace || '';
 }
 
 Pool.prototype.push = function(el) {
@@ -10,7 +10,7 @@ Pool.prototype.push = function(el) {
     }
     
     this.storage.push(el);
-}
+};
 
 Pool.prototype.pop = function(argument) {
     if (this.storage.length === 0) {
@@ -18,7 +18,7 @@ Pool.prototype.pop = function(argument) {
     } else {
         return this.storage.pop();
     }
-}
+};
 
 Pool.prototype.create = function() {
     if (this.namespace) {
@@ -26,7 +26,7 @@ Pool.prototype.create = function() {
     } else {
         return document.createElement(this.tagName);
     }
-}
+};
 
 Pool.prototype.allocate = function(size) {
     if (this.storage.length >= size) {
@@ -34,9 +34,9 @@ Pool.prototype.allocate = function(size) {
     }
 
     var difference = size - this.storage.length;
-    for (var i = 0; i < difference; i++) {
+    for (var poolAllocIter = 0; poolAllocIter < difference; poolAllocIter++) {
         this.storage.push(this.create());
     }
-}
+};
 
 module.exports = Pool;

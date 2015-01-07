@@ -47,4 +47,6 @@ Pool.prototype.allocate = function(size) {
     }
 };
 
-module.exports = Pool;
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    module.exports = Pool;
+}

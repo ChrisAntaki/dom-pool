@@ -8,6 +8,7 @@
   "description": "Make your browser's life easier",
   "main": "Pool.js",
   "moduleType": [
+    "globals",
     "node"
   ],
   "keywords": [

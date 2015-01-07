@@ -1,19 +1,19 @@
 function Pool(params) {
-    if (!params) {
+    if (typeof params !== 'object') {
         throw new Error("Please pass parameters. Example -> new Pool({ tagName: \"div\" })");
     }
 
-    if (!params || !params.tagName) {
+    if (typeof params.tagName !== 'string') {
         throw new Error("Please specify a tagName. Example -> new Pool({ tagName: \"div\" })");
     }
 
     this.storage = [];
-    this.tagName = params.tagName;
+    this.tagName = params.tagName.toUpperCase();
     this.namespace = params.namespace;
 }
 
 Pool.prototype.push = function(el) {
-    if (el.tagName !== this.tagName) {
+    if (el.tagName.toUpperCase() !== this.tagName) {
         return;
     }
     

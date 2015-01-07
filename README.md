@@ -30,7 +30,7 @@ var circlePool = new Pool({
 ```
 
 ### What browsers are supported?
-Modern browsers and IE9+. If you are not passing a namespace, IE5+ is supported. If you'd like to use custom namespaces in IE8 or lower, you might find [aight](https://github.com/shawnbot/aight) useful.
+Modern browsers and IE9+. Not passing a `namespace` parameter? Then the IE support expands to IE5+. If you'd like to support custom namespaces in IE8, check out [aight](https://github.com/shawnbot/aight).
 
 ### Available on NPM & Bower
 ```js

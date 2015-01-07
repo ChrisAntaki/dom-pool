@@ -1,7 +1,15 @@
 function Pool(params) {
+    if (!params) {
+        throw new Error("Please pass parameters. Example -> new Pool({ tagName: \"div\" })");
+    }
+
+    if (!params || !params.tagName) {
+        throw new Error("Please specify a tagName. Example -> new Pool({ tagName: \"div\" })");
+    }
+
     this.storage = [];
-    this.tagName = params.tagName || '';
-    this.namespace = params.namespace || '';
+    this.tagName = params.tagName;
+    this.namespace = params.namespace;
 }
 
 Pool.prototype.push = function(el) {

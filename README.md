@@ -7,7 +7,7 @@ Make your browser's life easier
 ```js
 var Pool = require('dom-pool');
 var divPool = new Pool({
-  tagName: 'div',
+  tagName: 'div'
 });
 
 // Get a div
@@ -22,7 +22,7 @@ divPool.allocate(100);
 // Get your SVG on
 var circlePool = new Pool({
   namespace: 'http://www.w3.org/2000/svg',
-  tagName: 'circle',
+  tagName: 'circle'
 });
 
 // Enjoy!

@@ -29,6 +29,9 @@ var circlePool = new Pool({
 
 ```
 
+### What browsers are supported?
+Modern browsers and IE9+. If you aren't using custom namespaces (like SVG), you can move that back to IE5+. If you'd like to use custom namespaces in IE8 or lower, check out [this ES5 shim](https://github.com/shawnbot/aight).
+
 ### Available on NPM & Bower
 ```js
 npm install dom-pool

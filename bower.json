@@ -1,0 +1,25 @@
+{
+  "name": "dom-pool",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ChrisAntaki/dom-pool",
+  "authors": [
+    "Chris Antaki <ChrisAntaki@gmail.com>"
+  ],
+  "description": "Make your browser's life easier",
+  "main": "Pool.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "dom",
+    "pool"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ChrisAntaki/dom-pool/issues"
   },
-  "homepage": "https://github.com/ChrisAntaki/dom-pool"
+  "homepage": "https://github.com/ChrisAntaki/dom-pool",
+  "devDependencies": {
+    "qunitjs": "^1.16.0"
+  }
 }

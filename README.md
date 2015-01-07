@@ -34,7 +34,7 @@ var circlePool = new Pool({
 npm install dom-pool
 ```
 
-#### Install with Bower
+### Install with Bower
 ```js
 bower install dom-pool
 ```

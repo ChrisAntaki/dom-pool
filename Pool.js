@@ -8,12 +8,12 @@ function Pool(params) {
     }
 
     this.storage = [];
-    this.tagName = params.tagName.toUpperCase();
+    this.tagName = params.tagName.toLowerCase();
     this.namespace = params.namespace;
 }
 
 Pool.prototype.push = function(el) {
-    if (el.tagName.toUpperCase() !== this.tagName) {
+    if (el.tagName.toLowerCase() !== this.tagName) {
         return;
     }
     

@@ -1,6 +1,6 @@
 {
   "name": "dom-pool",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Make your browser's life easier",
   "main": "Pool.js",
   "scripts": {

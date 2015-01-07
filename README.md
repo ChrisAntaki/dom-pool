@@ -29,13 +29,12 @@ var circlePool = new Pool({
 
 ```
 
-### Installation
-#### NPM
+### Install with NPM
 ```js
 npm install dom-pool
 ```
 
-#### Bower
+#### Install with Bower
 ```js
 bower install dom-pool
 ```

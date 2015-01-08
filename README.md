@@ -44,7 +44,7 @@ circlePool.allocate(128);
 ```
 
 ### What browsers are supported?
-Modern browsers & IE9+. If you're sticking to HTML nodes, and not passing a namespace parameter IE5+ is supported. The reason being, IE added support for [createElementNS](http://msdn.microsoft.com/en-us/library/ie/ff975213%28v=vs.85%29.aspx) in version 9.
+Modern browsers & IE9+. If you're sticking to HTML nodes then IE5+ is supported. The reason being, IE added support for [createElementNS](http://msdn.microsoft.com/en-us/library/ie/ff975213%28v=vs.85%29.aspx) in version 9.
 
 ### Screenshots of dom-pool in use, with Chrome DevTools
 

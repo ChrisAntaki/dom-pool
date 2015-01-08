@@ -1,7 +1,7 @@
 dom-pool
 ========
 
-Make your browser's life easier
+Let your app focus on keeping 60fps, instead of creating & GCing DOM nodes on the fly.
 
 ### How to use
 ```js
@@ -25,9 +25,6 @@ divPool.push(div);
 
 // To create DIVs ahead of time, use the "allocate" method.
 divPool.allocate(100);
-
-// Now the app can focus on keeping 60fps,
-// instead of creating & GCing DOM nodes on the fly.
 ```
 
 ### Custom namespaces

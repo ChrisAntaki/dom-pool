@@ -5,7 +5,7 @@ Make your browser's life easier
 
 ### How to use
 ```js
-// Grab the library from NPM, Bower, or GitHub.
+// Grab the library from NPM or Bower.
 var Pool = require('dom-pool');
 
 // Create a new Pool for a specific DOM tagName, like "div".

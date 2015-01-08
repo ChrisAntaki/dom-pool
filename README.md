@@ -16,7 +16,7 @@ var divPool = new Pool({
 // Pools have an Array-like syntax: "pop" & "push".
 var div = divPool.pop();
 
-// ... imagine doing awesome stuff with the DIV ...
+// ... let's imagine doing awesome stuff with the DIV ...
 
 // Once you're done with the DIV, return it to the Pool with "push".
 divPool.push(div);

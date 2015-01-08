@@ -32,7 +32,7 @@ divPool.allocate(100);
 ### Custom namespaces
 ```js
 // SVG is also supported.
-// We just need to specify the right namespace.
+// We just need to specify its namespace.
 var circlePool = new Pool({
   namespace: 'http://www.w3.org/2000/svg',
   tagName: 'circle'

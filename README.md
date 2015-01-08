@@ -33,9 +33,12 @@ var circlePool = new Pool({
 Modern browsers and IE9+. Not passing a `namespace` parameter? Then the IE support expands to IE5+. If you'd like to support custom namespaces in IE8, check out [aight](https://github.com/shawnbot/aight).
 
 ### Screenshots of dom-pool in use, with Chrome DevTools
-(Pay attention to the DOM node count)
-![Pooling DOM nodes](//i.imgur.com/gzkbN1X.png)
-![Creating DOM nodes](//i.imgur.com/oEJyNO7.png)
+
+Note the DOM node count over time.
+
+![Pooling DOM nodes](https://i.imgur.com/gzkbN1X.png)
+
+![Creating DOM nodes](https://i.imgur.com/oEJyNO7.png)
 
 ### Available on NPM & Bower
 ```js

@@ -21,12 +21,12 @@ var div = divPool.pop();
 // Once you're done with the DIV, return it to the Pool with "push".
 divPool.push(div);
 
-// There's now 1 DIV ready to deploy.
+// Next time "pop" is called, your app can efficiently reuse the DIV.
 
 // To create DIVs ahead of time, use the "allocate" method.
 divPool.allocate(100);
 
-// There are now 100 DIVs ready to deploy.
+// There are now 100 DIVs ready to use.
 ```
 
 ### Custom namespaces

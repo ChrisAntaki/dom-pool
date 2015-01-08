@@ -26,7 +26,8 @@ divPool.push(div);
 // To create DIVs ahead of time, use the "allocate" method.
 divPool.allocate(100);
 
-// There are now 100 DIVs ready to use.
+// Now the app can focus on keeping 60fps,
+// instead of creating & GCing DOM nodes on the fly.
 ```
 
 ### Custom namespaces
@@ -39,8 +40,6 @@ var circlePool = new Pool({
 });
 
 // Let's allocate 128 circles.
-// This way the app can focus on keeping 60fps,
-// instead of creating & GCing circles on the fly. ;)
 circlePool.allocate(128);
 ```
 

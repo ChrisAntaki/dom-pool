@@ -1,7 +1,7 @@
 dom-pool
 ========
 
-Let your app focus on keeping 60fps, instead of creating & GCing DOM nodes on the fly.
+Avoid creating & GCing DOM nodes on the fly. Let your app focus rendering 60fps.
 
 ### How to use
 ```js

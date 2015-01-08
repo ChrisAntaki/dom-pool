@@ -40,7 +40,7 @@ var circlePool = new Pool({
 
 // Let's allocate 128 circles.
 // This way the app can focus on keeping 60fps,
-// instead of creating circles on the fly. ;)
+// instead of creating & GCing circles on the fly. ;)
 circlePool.allocate(128);
 ```
 

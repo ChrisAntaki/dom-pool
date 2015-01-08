@@ -8,39 +8,38 @@ Make your browser's life easier
 // Grab the library from NPM, Bower, or GitHub.
 var Pool = require('dom-pool');
 
-// Create a new Pool for a specific DOM tagName.
+// Create a new Pool for a specific DOM tagName, like "div".
 var divPool = new Pool({
   tagName: 'div'
 });
 
 // Pools have an Array-like syntax: "pop" & "push".
-// When calling "pop", you'll always get a new DOM node.
 var div = divPool.pop();
 
-// Now I'll leave what you can do with a DIV to your imagination ;) ...
+// ... here's where you can imagine doing awesome stuff to the DIV...
 
-// Once you're done with the DIV, return it to the Pool.
-// Now it will be saved for the next time you need a DIV.
-// This is easier on browsers.
+// Once you're done with the DIV, return it to the Pool with "push".
 divPool.push(div);
 
-// If you'd like to allocate nodes ahead of time,
-// just call the "allocate" method, and pass it a number.
-// The Pool will then add nodes to reach the specified number.
+// There's now 1 DIV ready to deploy.
+
+// To create DIVs ahead of time, use the "allocate" method.
 divPool.allocate(100);
 
-// There are now 100 nodes ready to deploy.
+// There are now 100 DIVs ready to deploy.
 ```
 
 ### Custom namespaces
 ```js
 // SVG is also supported!
-// Since SVG has a different namespace than HTML,
-// we need to specify it.
+// SVG has its own namespace which we need to specify.
 var circlePool = new Pool({
   namespace: 'http://www.w3.org/2000/svg',
   tagName: 'circle'
 });
+
+// Imagine what we can do with all these circles. ;)
+circlePool.allocate(128);
 ```
 
 ### What browsers are supported?

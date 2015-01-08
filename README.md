@@ -31,14 +31,16 @@ divPool.allocate(100);
 
 ### Custom namespaces
 ```js
-// SVG is also supported!
-// SVG has its own namespace which we need to specify.
+// SVG is also supported.
+// We just need to specify the right namespace.
 var circlePool = new Pool({
   namespace: 'http://www.w3.org/2000/svg',
   tagName: 'circle'
 });
 
-// Imagine what we can do with all these circles. ;)
+// Let's allocate 128 circles.
+// This way the app can focus on keeping 60fps,
+// instead of creating circles on the fly. ;)
 circlePool.allocate(128);
 ```
 

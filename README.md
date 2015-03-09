@@ -40,6 +40,13 @@ var circlePool = new Pool({
 circlePool.allocate(128);
 ```
 
+### What performance gains can I expect?
+Reusing DOM elements is [2-6 times faster](http://jsperf.com/dom-pool-performance-1) than creating DOM elements.
+
+![Performance](https://i.imgur.com/VaUcUQy.png)
+
+Now is this performance totally free? Not exactly. When you create a DOM element, it's like a blank slate. When you reuse a DOM element, it keeps the attributes you've given it. However, if you're going to be updating those same attributes anyways, it's basically free.
+
 ### What browsers are supported?
 Modern browsers & IE9+. If you're sticking to HTML nodes then IE5+ is supported. The reason being, IE added support for [createElementNS](http://msdn.microsoft.com/en-us/library/ie/ff975213%28v=vs.85%29.aspx) in version 9.
 

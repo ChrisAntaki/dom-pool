@@ -3,18 +3,23 @@ dom-pool
 
 Let your app focus on rendering 60fps. Avoid creating & GC'ing DOM nodes on the fly.
 
-### How to use
+### Installation
+```bash
+npm install dom-pool --save
+```
+
+### Usage
 ```js
 // Grab the library from NPM or Bower.
-var Pool = require('dom-pool');
+const Pool = require('dom-pool');
 
 // Create a new Pool for a specific DOM tagName, like "div".
-var divPool = new Pool({
+const divPool = new Pool({
   tagName: 'div'
 });
 
 // Pools have an Array-like syntax: "pop" & "push".
-var div = divPool.pop();
+const div = divPool.pop();
 
 // ... let's imagine doing awesome stuff with the DIV ...
 
@@ -31,7 +36,7 @@ divPool.allocate(100);
 ```js
 // SVG is also supported.
 // We just need to specify its namespace.
-var circlePool = new Pool({
+const circlePool = new Pool({
   namespace: 'http://www.w3.org/2000/svg',
   tagName: 'circle'
 });
@@ -57,12 +62,3 @@ Note the DOM node count over time.
 ![Pooling DOM nodes](https://i.imgur.com/gzkbN1X.png)
 
 ![Creating DOM nodes](https://i.imgur.com/oEJyNO7.png)
-
-### Available on NPM & Bower
-```js
-npm install dom-pool
-```
-
-```js
-bower install dom-pool
-```
